@@ -1,0 +1,70 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Zdravlje&amp;Ljepota</TITLE>
+<link rel="stylesheet" type="text/css" href="kontakt.css">
+</HEAD>
+<BODY> 
+
+
+<div class = "row" id = "pitanja">
+<div class = "four" id = "naslov">
+<p id = "kontakt"> Ukoliko imate pitanja ili prijedloge, popunite obrazac. </p>
+</div>
+</div>
+
+<div class = "row">
+<br>
+<br>
+<div class = "four" id = "kontakt_forma">
+        <form class ="kontakt_form" id = "formaKontakt" action="#" method="post">
+		<table>
+				<tr>
+					<td> <label> Ime: </label></td>
+					<td> <input type="text" name="Ime" id = "Ime" onchange = "validacijaImeKontakt()" ></td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "imeGreska"></div></td>
+				</tr>
+				
+				<tr>
+					<td> <label> Prezime:  </label></td>
+					<td> <input type="text" name="Prezime" id = "Prezime" onchange = "validacijaPrezimeKontakt()"><td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "prezimeGreska"></div></td>
+				</tr>
+				
+
+				<tr>
+					<td> <label> Email: </label></td>
+					<td> <input type="text" name="Email" id = "Email" onchange = "validacijaMailKontakt()"><td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "mailGreska"></div></td>
+				</tr>
+
+				<tr>
+					<td> <label> Poruka: </label></td>
+					<td> <textarea id="poruka" name="poruka" rows="2" cols = "2" onkeydown = "validacijaPoruka()"> </textarea>
+				</tr>
+				<tr>
+				    <td></td>
+					<td><div id = "formaGreska"></div></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td> <br> <input type="button" value="Pošalji" class="dugme" id = "dugme" onclick = "validacijaSvaPoljaKontakt()"> </td>
+				</tr>
+			</table>
+		</form>
+</div>
+</div>
+</BODY>
+</HTML>

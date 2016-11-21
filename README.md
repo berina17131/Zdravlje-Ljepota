@@ -34,4 +34,21 @@ Dokumentacija Spirale 1:
       
       Dokumenti- svi .css i .html fajlovi zajedno sa folderom "slike".
 
+
+Dokumentacija Spirale 2:
+
+   1.) Uraðeno je:
+            
+        - Validacija formi na podstranicama "zdravlje.html", "lifestyle.html", "kontakt.html". Uraðeno je da dok sva polja ne budu validirana 
+          button je disabled.
+        - Dropdown menu na meni opciji "Ljepota".
+        - Galerija slika na meni opciji "Ljepota" -> "Fashion Week". Uraðeno je da se slika raširi preko cijelog ekrana.
+        - Uz pomoæ ajaxa podstranice se uèitavaju bez reload-a.
+
+  2.) Nisam koristila biblioteke i frameworke.
+
+  3.) i 4.) Nisam primijetila bug-ove.
+
+  5.) Ostali su prethodno navedeni fajlovi i nalaze se u fajlu "Spirala_1 + _2".
+
   

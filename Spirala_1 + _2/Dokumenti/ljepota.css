@@ -4,19 +4,6 @@
 	
 }
 
-.okvir {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	height: 100%;
-}
-
-.sadrzaj
-{
-	height: 100%;
-	width: 100%;
-	box-sizing: border-box;
-}
 
 body{
 	
@@ -41,48 +28,6 @@ body{
 	color:#ffcccc;
 }
 
-
-.meni
-{
-	background-color: rgba(56, 56, 56, 0.43);
-	height: auto;
-    margin: 0px;
-	position:relative;
-	float: left;
-    width: 100%;
-}
-
-.meni ul
-{
-	width: 50em;
-	height: auto;
-    margin: 0 auto;
-}
-
-.meni ul li{
-	
-	list-style: none;
-	display: inline;
-	font-weight: bold;
-	margin:2%;
-	font-family: Kaushan Script, sans-serif;
-	font-size: 22px;
-}
-
-.meni a{
-	
-	color: #ffcccc;
-	text-decoration: none;
-	padding: 10px;
-    
-}
-
-.meni ul li:hover
-{
-	background: #ff4d4d;
-	transition: all 0.45s;
-	opacity: 0.7;
-}
 
 
 #news
@@ -132,29 +77,7 @@ body{
 
 @media screen and (max-width: 768px)
 {
-	.meni{
-		box-sizing: border-box;
-		width: 100%;
-		margin: 0px;
-	
-	}
-	
-	.meni ul
-     {
-	width: 100%;
-	height: auto;
-    margin-left: 0%;
-	margin-right: 0%;
-	padding-left: 0%;
-    }
-
-    .meni ul li{
-		margin: 0px;
-		width: 100%;
-		font-size: 100%;
-		margin-left: 3%;
-    }
-	
+		
     #kolona
 	{
 		width: 100%;
@@ -232,32 +155,7 @@ body{
 
 @media screen and (max-width: 500px)
 {
-	
-	.meni{
-		box-sizing: border-box;
-		width: 100%;
-	}
-	
-	
-     .meni ul
-     {
-	width: 100%;
-	height: auto;
-    margin-left: 35%;
-	margin-right: 35%;
-	padding-left: 0%;
-    }
-
-    .meni ul li{
-		margin: 0px;
-		width: 100%;
-		display: table-row;
-        font-size: 18px;
-        text-align: center;
-		padding: 0px;
-		}
-	
-	
+		
 	#kolona
 	{
 		width: 100%;

@@ -1,26 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
 *{
     box-sizing: border-box;
 	
 }
 
-.okvir {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	height: 100%;
-}
-
-.sadrzaj
-{
-	height: 100%;
-	width: 100%;
-	box-sizing: border-box;
-}
 
 body{
 	
-	background-image: url(slike/home.jpg);
+	background-image: url(slike/2.jpg);
 	background-repeat: repeat-y;
 	background-size:cover;
 }
@@ -38,52 +26,8 @@ body{
 	font-family: Kaushan Script, sans-serif;
 	font-size: 30px;
 	text-align: center;
-	color:#ffcccc;
+	color:#ffcf45;
 }
-
-
-.meni
-{
-	background-color:rgba(56, 56, 56, 0.43);
-	height: auto;
-    margin: 0px;
-	position:relative;
-	float: left;
-    width: 100%;
-}
-
-.meni ul
-{
-	width: 50em;
-	height: auto;
-    margin: 0 auto;
-}
-
-.meni ul li{
-	
-	list-style: none;
-	display: inline;
-	font-weight: bold;
-	margin: 2%;
-	font-family: Kaushan Script, sans-serif;
-	font-size: 22px;
-}
-
-.meni a{
-	
-	color: #ffcccc;
-	text-decoration: none;
-	padding-right: 10px;
-    
-}
-
-.meni ul li:hover
-{
-	background: #ff4d4d;
-	transition: all 0.45s;
-	opacity: 0.7;
-}
-
 
 #news
 {
@@ -96,76 +40,120 @@ body{
 {
 	font-family: Kaushan Script, sans-serif;
 	text-align: center;
-	color: #e68970;
 }
 
-.clanak_1
+#clanak1
 {
 	border: 1px solid black;
-    height: auto;
+	margin : 20px;
+	margin-left:30px;
 	padding: 20px;
-	background: rgba(57, 50, 50, 0.4);
+	background: rgba(98, 138, 98, 0.5);
 	color: white;
-	margin: 20px auto;
-	width: 90%;
-	margin-left: 0px;
+	float:left;
+	font-size: 19px;
 }
 
-.clanak_2
+
+#clanak2
 {
 	border: 1px solid black;
-	height: auto;
+	margin : 20px;
+	margin-left:30px;
 	padding: 20px;
-	padding-bottom: 15px;
-	background-color: #fef2f299;
-	margin: 20px auto;
-	font-size: 17px;
-	float:right;
+	background: rgba(98, 138, 98, 0.5);
+	color: white;
+	float:left;
+	font-size: 19px;
 }
 
-#slika_jedan
+#naslov
+{
+	text-align: center;
+}
+
+
+#med
 {
 	max-width: 100%;
 	height: auto;
-	margin:0 auto;
+	margin: 0px;
 	border: 3px solid black;
+	float: right;
 }
 
-#slika_dva
+#tablete
 {
+	max-width: 100%;
 	height: auto;
-	max-width:100%;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	margin: 10px;
 	border: 3px solid black;
-	float:left;
+	float: left;
+	margin-bottom: 0px;
 }
 
+
+table
+{
+	width: 100%;
+	height: auto;
+	
+}
+
+.kontakt_form
+{
+	border: 1px solid black;
+	padding: 5px;
+	background: rgba(177, 151, 87, 0.62);
+	color: white;
+	height: auto;
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+input
+{
+	width: 100%;
+	height: 26px;
+	margin-top: 10px;
+	outline: 0;
+}
+
+label
+{
+	font-family: Kaushan Script, sans-serif;
+	color: white;
+}
+
+
+td
+{
+	text-align: center;
+}
+
+#Recept
+{
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+}
+
+#kolona1
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+#kolona2
+{
+	padding: 0px;
+	margin: 0px;
+}
 
 @media screen and (max-width: 768px)
 {
-	.meni{
-		box-sizing: border-box;
-		width: 100%;
-		margin: 0px;
 	
-	}
-	
-	.meni ul
-     {
-	width: 100%;
-	height: auto;
-    margin-left: 0%;
-	margin-right: 0%;
-	padding-left: 0%;
-    }
-
-    .meni ul li{
-		margin: 0px;
-		width: 100%;
-		font-size: 100%;
-		margin-left: 3%;
-    }
 	
 	#kolona1
 	{
@@ -178,29 +166,53 @@ body{
 		width: 100%;
 		margin: 0px;
 	}
-	
-	.clanak_1
-    {
-    width: 100%;
-	margin: 0px;
-	margin-top: 20px;
-	font-size: 100%;
-    }
-	
 
-    .clanak_2
+	.kontakt_form
     {
+	height: auto;
 	width: 100%;
 	margin: 0px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+    }
+	
+	#clanak1
+    {
+    width: 100%;
 	font-size: 100%;
+	margin: 0px;
+	margin-top: 10px;
+    }
+	
+	#clanak2
+    {
+    width: 100%;
+	font-size: 100%;
+	margin: 0px;
+	margin-top: 10px;
     }
 	
 	#news
     {
     width: 100%;
 	margin: 0px;
+    }
+	
+    input
+    {
+	width: 100%;
+	height: 23px;
+	margin-top: 10px;
+    }
+
+    label
+    {
+	margin-right: 10%;
+    }
+
+    #poruka
+    {
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
     }
 	
 .eleven {
@@ -222,7 +234,7 @@ body{
 	width: 100%;
 	float: left;
 	margin-left: 2%;
-
+	
 }
 .seven {
 	width: 100%;
@@ -243,7 +255,7 @@ body{
 	width: 100%;
 	float:left;
 	margin-left: 2%;
-
+	
 }
 .three {
 	width: 100%;
@@ -265,35 +277,6 @@ body{
 
 @media screen and (max-width: 500px)
 {
-	.okvir
-	{
-		font-size: 100%;
-	}
-	
-	.meni{
-		box-sizing: border-box;
-		width: 100%;
-	}
-	
-	
-     .meni ul
-     {
-	width: 100%;
-	height: auto;
-    margin-left: 35%;
-	margin-right: 35%;
-	padding-left: 0%;
-    }
-
-    .meni ul li{
-		margin: 0px;
-		width: 100%;
-		display: table-row;
-        font-size: 18px;
-        text-align: center;
-		padding: 0px;
-		}
-	
 	
 	#kolona1
 	{
@@ -305,6 +288,47 @@ body{
 	{
 		width: 100%;
 		margin: 0px;
+	}
+	
+	.kontakt_form
+    {
+	height: auto;
+	width: 100%;
+	margin: 0px;
+    }
+	
+	#clanak1
+    {
+    width: 100%;
+	font-size: 100%;
+	margin: 0px;
+	margin-top: 10px;
+    }
+	
+	#clanak2
+    {
+    width: 100%;
+	font-size: 100%;
+	margin: 0px;
+	margin-top: 10px;
+    }
+	
+	#news
+    {
+    width: 100%;
+	margin: 0px;
+    }
+	
+	#med
+	{
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	
+	#tablete
+	{
+		margin: 0px;
+		margin-bottom: 10px;
 	}
 	
 	.eleven {
@@ -365,11 +389,12 @@ body{
 	float:left;
 	margin-left: 2%;
 }
-
+	
 }
 
+
 .seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child { 
-	margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
+	margin-left: 0; 
 }
 .eleven {
 	width: 91.5%;
@@ -390,7 +415,6 @@ body{
 	width: 66%;
 	float: left;
 	margin-left: 2%;
-
 }
 .seven {
 	width: 57.5%;
@@ -398,12 +422,12 @@ body{
 	margin-left: 2%;
 }
 .six {
-	width: 49%; /* This div spans six columns (the entire row)*/
+	width: 49%; 
 	float: left;
 	margin-left: 2%;
 }
 .five {
-	width: 40.5%; /* This div spans five columns */
+	width: 40.5%; 
 	margin-left: 2%;
 	float:left;
 }
@@ -411,7 +435,6 @@ body{
 	width: 32%;
 	float:left;
 	margin-left: 2%;
-
 }
 .three {
 	width: 23.5%;
@@ -432,11 +455,7 @@ body{
 
 .row {
 	width: 100%;
-	clear: both; /* Clear creates new styles for the next row */
+	clear: both; 
 	padding: 0px;
 	margin: 0px;
-	box-sizing: border-box;
 }
-
-
-

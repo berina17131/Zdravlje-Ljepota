@@ -7,30 +7,42 @@
 </HEAD>
 <BODY> 
 
-<div class = "okvir"><br>
+<script src="ajax_validacija.js" type="text/javascript" charset="utf-8"></script>
+
+<div class = "okvir" id = "Okvir" ><br>
+
 <div class="Header"> <h1 id = "ljiz"> Zdravlje &amp; Ljepota </h1></div>
-<div class = "row" ><br><br><br>
-<div class="meni"><br>
+
+<br>
+<div id ="iefix">
 <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="zdravlje.html">Zdravlje</a></li>
-                <li><a href="ljepota.html">Ljepota</a></li>
-				<li><a href="lifestyle.html">Lifestyle</a></li>
-				<li><a href="o_nama.html">O nama</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#" onclick = 'loadPage("home.html")'>Home</a></li>
+                <li><a href="#" onclick = 'loadPage("zdravlje.html")'>Zdravlje</a></li>
+                <li><a href="#" >Ljepota</a>
+				    <div id = "submenu">
+				     <ul>
+					    <li><a href="#" onclick = 'loadPage("ljepota.html")'>Novosti</a></li>
+						<li><a href="#" onclick = 'loadPage("galerija.html")'>Fashion Week</a></li>
+						<li><a href="#" onclick = 'loadPage("kosa_lice.html")'>Kosa i Lice</a></li>
+					 </ul>
+					 </div>
+					 </li>	 
+				<li><a href="#" onclick = 'loadPage("lifestyle.html")'>Lifestyle</a></li>
+				<li><a href="#" onclick = 'loadPage("o_nama.html")'>O nama</a></li>
+				<li><a href="#" onclick = 'loadPage("kontakt.html")'>Kontakt</a></li>
 </ul>
-<br>
 </div>
-</div>
-
 <br>
-
+<br>
+<br>
+<br>
+<div id = "content">
 <div class = "row">
 <div class = "three" id = "news">
 <h2 id = "vijesti">  Najnovije vijesti  </h2></div></div>
 
 <br>
-<div class = "sadrzaj">
+
 <div class = "row">
 <div class = "six" id = "kolona1">
 <div class = "clanak_1">

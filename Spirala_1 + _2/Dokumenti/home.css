@@ -11,10 +11,18 @@
 	height: 100%;
 }
 
+#content
+{
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	position:relative;
+    z-index:500;
+}
 
 body{
 	
-	background-image: url(slike/lifestyle.jpg);
+	background-image: url(slike/home.jpg);
 	background-repeat: repeat-y;
 	background-size:cover;
 }
@@ -22,7 +30,7 @@ body{
 .Header
 {
 	width: 100%;
-	padding: 30px 0;
+	padding: 20px 0;
 	background-color: rgba(56, 56, 56, 0.43);
 }
 
@@ -36,48 +44,77 @@ body{
 }
 
 
-.meni
+
+ul
 {
+	margin-left: 0px;
+	padding: 0px;
 	background-color: rgba(56, 56, 56, 0.43);
-	height: auto;
-    margin: 0px;
-	position:relative;
-	float: left;
-    width: 100%;
 }
 
-.meni ul
-{
-	width: 50em;
-	height: auto;
-    margin: 0 auto;
-}
-
-.meni ul li{
+ul  li{
 	
-	list-style: none;
-	display: inline;
-	font-weight: bold;
-	margin:2%;
+	background-color: rgba(56, 56, 56, 0.43);
+	width: 188px;
+	height: 50px;
+	line-height: 50px;
 	font-family: Kaushan Script, sans-serif;
 	font-size: 22px;
+	float: left;
+	text-align:center;
+	list-style: none;
+	margin-right: 1%;
 }
 
-.meni a{
+ul  li a{
 	
 	color: #ffcccc;
 	text-decoration: none;
-	padding: 10px;
-    
+	display: block;
 }
 
-.meni ul li:hover
+ul li a:hover
 {
 	background: #ff4d4d;
 	transition: all 0.45s;
 	opacity: 0.7;
 }
 
+
+ul ul
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(56, 56, 56, 0.43);
+	
+}
+
+ul li ul li
+{
+	background-color: rgba(56, 56, 56, 0.43);
+	margin: 0px;
+	margin-bottom: 2%;
+	display:none;
+
+}
+
+ul li:hover ul li
+{
+	display:block;
+}
+
+#iefix
+{
+	position:relative;
+    z-index:1000;
+	max-width: 100%;
+}
+
+#submenu
+{
+	position: relative;
+    display: inline-block;
+}
 
 #news
 {
@@ -93,127 +130,116 @@ body{
 	color: #e68970;
 }
 
-#naslov
-{
-	text-align: center;
-}
-
-
-#clanak_1
+.clanak_1
 {
 	border: 1px solid black;
-	margin-top:20px;
+    height: auto;
 	padding: 20px;
-	background:rgba(98, 138, 98, 0.45);
+	background: rgba(57, 50, 50, 0.4);
 	color: white;
-	font-size: 19px;
+	margin: 20px auto;
+	width: 90%;
+	margin-left: 0px;
 }
 
-#clanak_2
+.clanak_2
 {
 	border: 1px solid black;
-	padding: 10px;
-	margin: 20px;
-	background:rgba(251, 204, 243, 0.5);
-	color: white;
-	float:left;
-	font-size: 18px;
-	color: purple;
+	height: auto;
+	padding: 20px;
+	padding-bottom: 15px;
+	background-color: #fef2f299;
+	margin: 20px auto;
+	font-size: 17px;
+	float:right;
 }
 
-
-#zumba
+#slika_jedan
 {
-	height: auto;
 	max-width: 100%;
-	margin: 15px;
-	margin-left: 5px;
+	height: auto;
+	margin:0 10px;
 	border: 3px solid black;
-	float:left;
 }
 
-#red_forma
+#slika_dva
 {
-	width: 100%;
-}
-
-
-
-table
-{
-	width: 100%;
+	max-width: 100%;
 	height: auto;
-	
+	margin:0 10px;
+	margin-bottom: 10px;
+	border: 3px solid black;
 }
 
-.kontakt_form
+#slika_tri
 {
-	border: 1px solid black;
-	padding: 5px;
-	background: rgba(66, 78, 66, 0.67);
-	color: white;
+	max-width: 100%;
 	height: auto;
-	width: 100%;
+	margin-bottom: 10px;
+	margin:0 10px;
+	border: 3px solid black;
 }
 
-
-input
+#slika_cetiri
 {
-	width: 100%;
-	height: 26px;
-	margin-top: 10px;
-	outline: 0;
+	max-width: 100%;
+	height: auto;
+	margin:0 10px;
+	border: 3px solid black;
 }
-
-select
-{
-
-	width: 100%;
-	margin-top: 10px;
-	height: 26px;
-}
-label
-{
-	font-family: Kaushan Script, sans-serif;
-	color: white;
-}
-
-
-td
-{
-	text-align: center;
-}
-
 
 @media screen and (max-width: 768px)
 {
-	.meni{
-		box-sizing: border-box;
-		width: 100%;
-		margin: 0px;
+
+
+    ul li{
 	
-	}
-	
-	.meni ul
-     {
 	width: 100%;
 	height: auto;
-    margin-left: 0%;
-	margin-right: 0%;
-	padding-left: 0%;
+	margin: 0px;
     }
 
-    .meni ul li{
-		margin: 0px;
-		width: 100%;
-		font-size: 100%;
-		margin-left: 3%;
+	#slika_jedan
+   {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	margin:0px;
+	border: 3px solid black;
     }
+
+    #slika_dva
+    {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	margin:0px;
+	border: 3px solid black;
+    }
+
+    #slika_tri
+    {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	margin:0px;
+     }
+
+    #slika_cetiri
+    {
+	width: 100%;
+	height: auto;
+	margin:0px;
+	border: 3px solid black;
+    }
+	
+	
 	
 	#kolona1
 	{
 		width: 100%;
 		margin: 0px;
+		
 	}
 	
 	#kolona2
@@ -222,21 +248,56 @@ td
 		margin: 0px;
 	}
 	
-	#clanak_2
+	#kolona_1
 	{
+		width: 100%;
 		margin: 0px;
+		margin-bottom: 10px;
 	}
+	#kolona_2
+	{
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	#kolona_3
+	{
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	#kolona_4
+	{
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	
+	
+	
+	.clanak_1
+    {
+    width: 100%;
+	margin: 0px;
+	margin-top: 20px;
+	font-size: 100%;
+    }
+	
+
+    .clanak_2
+    {
+	width: 100%;
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 100%;
+    }
 	
 	#news
     {
     width: 100%;
 	margin: 0px;
     }
-	
-	#zumba
-	{
-		margin: 5px;
-	}
 	
 .eleven {
 	width: 100%;
@@ -300,32 +361,49 @@ td
 
 @media screen and (max-width: 500px)
 {
+	ul li{
 	
-	.meni{
-		box-sizing: border-box;
-		width: 100%;
-	}
-	
-	
-     .meni ul
-     {
 	width: 100%;
 	height: auto;
-    margin-left: 35%;
-	margin-right: 35%;
-	padding-left: 0%;
+	margin: 0px;
+	
+    }
+	
+	#slika_jedan
+    {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	margin:0px;
+	border: 3px solid black;
     }
 
-    .meni ul li{
-		margin: 0px;
-		width: 100%;
-		display: table-row;
-        font-size: 18px;
-        text-align: center;
-		padding: 0px;
-		}
-	
-	
+     #slika_dva
+   {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	margin:0px;
+	border: 3px solid black;
+    }
+
+   #slika_tri
+    {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	margin:0px;
+	border: 3px solid black;
+    }
+
+    #slika_cetiri
+    {
+	width: 100%;
+	height: auto;
+	margin:0px;
+	border: 3px solid black;
+   }
+
 	#kolona1
 	{
 		width: 100%;
@@ -338,21 +416,31 @@ td
 		margin: 0px;
 	}
 	
-	#clanak_2
+	#kolona_1
 	{
+		width: 100%;
 		margin: 0px;
+		margin-bottom: 10px;
 	}
-	
-	#news
-    {
-    width: 100%;
-	margin: 0px;
-    }
-	
-	#zumba
+	#kolona_2
 	{
-		margin: 5px;
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 10px;
 	}
+	#kolona_3
+	{
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	#kolona_4
+	{
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	
 	.eleven {
 	width: 100%;
 	float: left;
@@ -372,6 +460,7 @@ td
 	width: 100%;
 	float: left;
 	margin-left: 2%;
+
 }
 .seven {
 	width: 100%;
@@ -413,14 +502,8 @@ td
 
 }
 
-
-
-
-
-
-
 .seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child { 
-	margin-left: 0; 
+	margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
 }
 .eleven {
 	width: 91.5%;
@@ -441,6 +524,7 @@ td
 	width: 66%;
 	float: left;
 	margin-left: 2%;
+
 }
 .seven {
 	width: 57.5%;
@@ -448,12 +532,12 @@ td
 	margin-left: 2%;
 }
 .six {
-	width: 49%; 
+	width: 49%; /* This div spans six columns (the entire row)*/
 	float: left;
 	margin-left: 2%;
 }
 .five {
-	width: 40.5%; 
+	width: 40.5%; /* This div spans five columns */
 	margin-left: 2%;
 	float:left;
 }
@@ -461,6 +545,7 @@ td
 	width: 32%;
 	float:left;
 	margin-left: 2%;
+
 }
 .three {
 	width: 23.5%;
@@ -478,9 +563,14 @@ td
 	float:left;
 	margin-left: 2%;
 }
+
 .row {
 	width: 100%;
-	clear: both; 
+	clear: both; /* Clear creates new styles for the next row */
 	padding: 0px;
 	margin: 0px;
+	box-sizing: border-box;
 }
+
+
+

@@ -6,21 +6,6 @@
 </HEAD>
 <BODY> 
 
-<div class = "okvir"><br>
-<div class="Header"> <h1 id = "ljiz"> Zdravlje &amp; Ljepota </h1></div>
-<div class = "row" ><br><br><br>
-<div class="meni"><br>
-<ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="zdravlje.html">Zdravlje</a></li>
-                <li><a href="ljepota.html">Ljepota</a></li>
-				<li><a href="lifestyle.html">Lifestyle</a></li>
-				<li><a href="o_nama.html">O nama</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>
-</ul><br>
-</div>
-</div>
-
 <br>
 
 <div class = "row">
@@ -52,18 +37,29 @@
 	
 	<div class = "row"  id = "red_forma">
 	<br>
-	    <form class ="kontakt_form" action="#" method="post">
+	    <form class ="kontakt_form" id = "forma" action="#" method="post">
 <label> Ove sedmice Ljepota&amp;Zdravlje nagrađuje najbrže čitatelje. Prvih 5 koji popune i pošalju obrazac dobijaju na treninge Zumbe popust od 50% u odabranom Fitness klubu.<br></label>
 		<table>
 				<tr>
-					<td> <label class  = "ime"> Ime: </label></td>
-					<td> <input type="text" name="Ime" size = "18" ></td>
+					<td> <label> Ime: </label></td>
+					<td> <input type="text" name="Ime" id = "Ime" size = "18" onchange = "validacijaIme()"></td>
 				</tr>
 				
 				<tr>
-					<td> <label class = "ime"> Prezime:  </label></td>
-					<td> <input type="text" name="email" size = "18"><td>
+				    <td></td>
+					<td><div id = "imeGreska"></div></td>
 				</tr>
+				
+				<tr>
+					<td> <label> Prezime:  </label></td>
+					<td> <input type="text" size = "18" name="Prezime" id = "Prezime" onchange = "validacijaPrezime()"><td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "prezimeGreska"></div></td>
+				</tr>
+				
 				<tr>
 					<td> <label> Fitness: </label></td>
 					<td><select name="fitness">
@@ -71,17 +67,23 @@
                         <option value="gym">Gym</option>
                         <option value="cross" selected>CrossFit</option>
                         <option value="combat">Combat Fitness</option>
-  <                     </select> </td>
+                       </select> </td>
 				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "formaGreska"></div></td>
+				</tr>
+				
 				<tr>
 					<td> </td>
-					<td> <input type="button" value="Pošalji" class="dugme"> </td>
+					<td> <input type="button" value="Pošalji" class="dugme" id = "dugme" onclick ='validacijaSvaPolja("lifestyle.html")' > </td>
 				</tr>
 			</table>
 		</form>
 	</div>
 	</div>
-	<div class = "five" id = "kolona1">
+	<div class = "five" id = "kolona2">
 	  <div id = "clanak_2">
                  <h1>NOVO! NOVO! U Fitness Universe-u od sada i ZUMBAA!</h1>
                       <p><img id = "zumba" src = "slike/zumba.jpg" alt="Zumba" width="400" height="500"></p>
@@ -94,8 +96,7 @@
        </div>
 	  
     </div>
-	
 </div>
-</div>
+
 </BODY>
 </HTML>

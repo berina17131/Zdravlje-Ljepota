@@ -12,14 +12,17 @@
 			$broj = 0;
 			 foreach($xml->children()->children() as $korisnik)
 			   { 
-			        $broj = $broj + 1;
+			        
 			        if ($odgovor==""){
+
 			        if(stripos($korisnik -> ime, $q) === false  && stripos($korisnik -> prezime,$q) === false)
 					{
+						
 						$odgovor = "";
 					}
 					else
 					{
+						$broj = $broj + 1;
 						$odgovor = $odgovor . $korisnik -> ime . " " . $korisnik -> prezime;
 				    }
 										
@@ -31,6 +34,7 @@
 					}
 					else
 					{
+						$broj = $broj + 1;
 						$odgovor = $odgovor . "<br />" . $korisnik -> ime . " " . $korisnik -> prezime;
 					}
 					}

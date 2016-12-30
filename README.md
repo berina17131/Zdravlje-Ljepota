@@ -52,3 +52,41 @@ Dokumentacija Spirale 2:
   5.) Ostali su prethodno navedeni fajlovi i nalaze se u fajlu "Spirala_1 + _2".
 
   
+Dokumentacija Spirale 3:
+
+1.) Uraðeno je:
+
+     - omoguæena je registracija novih èlanova stranice
+     - za postojeæe èlanove omoguæen je login
+     - za admina odvojen je poseban interfejs sa moguænostima za ureðivanje novosti,
+       tj. dodavanje, brisanje i izmjenu novosti
+          opcija Novosti: pregled najnovijih novosti dodane od strane admina bez obzira na kategoriju.
+          opcija Dodaj Novost: dodaje novost, tj. serijalizuje je u XML -> novosti.xml
+          opcija Uredi Novosti: ponuðena lista svih novosti, iznad svake novosti postoji dugme za izmjenu. Kada se na njega klikne otvara se forma u kojoj se nalaze trenutni podaci o novosti, te moguænost izmjene.
+          Tu je omoguæeno i brisanje
+          opcija Korisnici: lista svih korisnika iz korisnici.XML; iznad svakog korisnika je dugme obrisi, ako admin zeli obrisati korisnika
+          
+     - pored toga, admin može da pregleda listu korisnika, te da obriše korisnika
+     - uraðena je validacija i u php-u i js i to forme za registraciju, kao i formi koje služe
+       unos novosti i izmjenu novosti. 
+     -koristila sam funkciju htmlspecialchars() kako bih sprijeèila XSS ranjivost koda
+     - unos, izmjenu i brisanje moze da obavlja samo admin
+
+     - kada je admin ulogovan, na podstranici novosti prikazuju se lista posljednih dodanih novosti
+     - tu postoji dugme koje omoguæava èuvanje podataka u vidu csv datoteke u kojoj se nalazi naslov novosti, sadrzaj i kategorija novosti
+     - omoguæeno je i da admin-korisnik na tabu Korisnici generise izvjestaj o korisnicima u .pdf formatu. Generisani izvjestaj predstavlja tabelu korisnika.
+     - uraðena je i pretraga korisnika na osnovu imena i prezimena na tabu Korisnici, stranica se ne reload-a pri pretrazi
+     - uraðen je deployment stranice na OpenShift https://developers.openshift.com.
+
+     - na svim podstranicama ovisno o kategorijama clanaka nalaze se najnovije vijesti iz XML
+     - u novosti.xml nalazi se odredjeni broj dodanih novosti po kategorijama
+     - u korisnici.xml je takoðer dodan odreðeni broj korisnika, npr. ako je user1 onda mu je sifra "user1user1", ukoliko je potrebno da vidite kako izgleda stranica kada
+       je obièni korisnik ulogovan.
+     
+2.) //
+
+3.) i 4.) Nisam primijetila bug-ove
+
+5.) Ostali su prethodno navedeni fajlovi, te svi novi fajlovi (.php, .js, .css) iz "Spirala3".
+Tu se nalazi folder slike, Xml(xml fajlovi) i fpdf folder.
+     

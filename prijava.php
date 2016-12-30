@@ -170,7 +170,7 @@ else
 		<table>
 				<tr>
 					<td> <label> Username: </label></td>
-					<td> <input type="text" name="username" id = "Username" value= "<?php echo $username;?>"></td>
+					<td> <input type="text" name="username" id = "Username" value= "<?php echo $username;?>" placeholder = "admin"></td>
 				</tr>
 				
 				<tr>
@@ -180,7 +180,7 @@ else
 				
 				<tr>
 					<td> <label> Password:  </label></td>
-					<td> <input type="password" name="password" id = "Password" value= "<?php echo $password;?>"><td>
+					<td> <input type="password" name="password" id = "Password" value= "<?php echo $password;?>" placeholder = "mojalozinka"><td>
 				</tr>
 				
 

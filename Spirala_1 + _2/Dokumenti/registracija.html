@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width">
+<TITLE>Zdravlje&amp;Ljepota</TITLE>
+<link rel="stylesheet" type="text/css" href="registracija.css">
+</HEAD>
+<BODY> 
+<br>
+<div class = "okvir" id = "Okvir" ><br>
+
+<div class="Header"> <h1 id = "ljiz"> Zdravlje &amp; Ljepota </h1></div>
+
+<br>
+<div id ="iefix">
+<ul>
+                <li><a href="#" onclick = 'loadPage("home.html")'>Home</a></li>
+                <li><a href="#" onclick = 'loadPage("zdravlje.html")'>Zdravlje</a></li>
+                <li><a href="#" >Ljepota</a>
+				    <div id = "submenu1">
+				     <ul>
+					    <li><a href="#" onclick = 'loadPage("ljepota.html")'>Novosti</a></li>
+						<li><a href="#" onclick = 'loadPage("galerija.html")'>Fashion Week</a></li>
+						<li><a href="#" onclick = 'loadPage("kosa_lice.html")'>Kosa i Lice</a></li>
+					 </ul>
+					 </div>
+					 </li>	 
+				<li><a href="#" onclick = 'loadPage("lifestyle.html")'>Lifestyle</a></li>
+				<li><a href="#">Info</a>
+				<div id = "submenu2">
+				     <ul>
+					    <li><a href="#" onclick = 'loadPage("o_nama.html")'> O nama </a></li>
+						<li><a href="#" onclick = 'loadPage("kontakt.html")'>Kontakt</a></li>
+					 </ul>
+					 </div>
+					 </li>	
+				<li id = "prijava"><a href="#" onclick = 'loadPage("prijava.html")'>Hej, pridruži nam se!</a></li>
+</ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class = "four" id = "registracija_forma">
+        <form class ="registracija_form" id = "formaRegistracija" action="registracija.php" method="post">
+		<table>
+				<tr>
+					<td> <label> Ime: </label></td>
+					<td> <input type="text" name="ime" id = "Ime" ></td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "imeGreska"></div></td>
+				</tr>
+				
+				<tr>
+					<td> <label> Prezime:  </label></td>
+					<td> <input type="text" name="prezime" id = "Prezime"><td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "prezimeGreska"></div></td>
+				</tr>
+				
+				<tr>
+					<td> <label> Email: </label></td>
+					<td> <input type="text" name="email" id = "Email" ></td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "emailGreska"></div></td>
+				</tr>
+				
+				<tr>
+					<td> <label> Username: </label></td>
+					<td> <input type="text" name="username" id = "Username" ></td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "usernameGreska"></div></td>
+				</tr>
+				
+				<tr>
+					<td> <label> Lozinka: </label></td>
+					<td> <input type="text" name="lozinka" id = "Lozinka" ></td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "lozinkaGreska"></div></td>
+				</tr>
+				
+				<tr>
+					<td> <label> Potvrdi lozinku: </label></td>
+					<td> <input type="text" name="potvrda_lozinka" id = "Potvrda_Lozinka" ></td>
+				</tr>
+				
+				<tr>
+				    <td></td>
+					<td><div id = "potvrdaLozinkaGreska"></div></td>
+				</tr>
+				
+				
+				<tr>
+					<td></td>
+					<td> <br> <input type="submit" value="Registruj se" class="dugme" id = "dugme"> </td>
+				</tr>
+			</table>
+		</form>
+</div>
+
+</div>
+
+</BODY> 
+</HTML>

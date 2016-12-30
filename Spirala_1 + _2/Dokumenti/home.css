@@ -66,6 +66,11 @@ ul  li{
 	margin-right: 1%;
 }
 
+#prijava
+{
+	width: 200px;
+	margin-right: 0px;
+}
 ul  li a{
 	
 	color: #ffcccc;
@@ -110,7 +115,13 @@ ul li:hover ul li
 	max-width: 100%;
 }
 
-#submenu
+#submenu1
+{
+	position: relative;
+    display: inline-block;
+}
+
+#submenu2
 {
 	position: relative;
     display: inline-block;

@@ -9,8 +9,10 @@
 	  {
 	         $xml = simplexml_load_file('Xml/korisnici.xml');
                 
+			$broj = 0;
 			 foreach($xml->children()->children() as $korisnik)
 			   { 
+			        $broj = $broj + 1;
 			        if ($odgovor==""){
 			        if(stripos($korisnik -> ime, $q) === false  && stripos($korisnik -> prezime,$q) === false)
 					{
@@ -32,6 +34,8 @@
 						$odgovor = $odgovor . "<br />" . $korisnik -> ime . " " . $korisnik -> prezime;
 					}
 					}
+					
+					if($broj == 10) {break;}
 			   }
 			   
          if ($odgovor=="") {

@@ -89,4 +89,21 @@ Dokumentacija Spirale 3:
 
 5.) Ostali su prethodno navedeni fajlovi, te svi novi fajlovi (.php, .js, .css) iz "Spirala3".
 Tu se nalazi folder slike, Xml(xml fajlovi) i fpdf folder.
-     
+   
+
+SPIRALA 4 - DOKUMENTACIJA
+
+Uraðeno je:
+
+1. Napravljene su tri povezane tabele. Tabela novost, korisnik i komentar.
+Komentar ima dva foreign key-a na tabele Novost i Korisnik preko id-a.
+Obzirom da nisam imala formu za komentar, na svaku novost sam dodala dugme kao
+opciju za dodavanje komentara korisnika. 
+Napravila sam da se prvobitno komentari dodaju u XML. Iznad svakog èlanka nalazi se dugme
+Komentiraj i nakon što se otvori èlanak ispod njega je forma za komentar.
+ 
+2.) Klikom na dugme Xml u Bazu prebacuju se potrebni podaci
+
+3.)Promijenjeno je da se radi samo sa bazom
+
+4.)  

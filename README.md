@@ -104,6 +104,10 @@ Komentiraj i nakon što se otvori èlanak ispod njega je forma za komentar.
  
 2.) Klikom na dugme Xml u Bazu prebacuju se potrebni podaci
 
-3.)Promijenjeno je da se radi samo sa bazom
+3.) Promijenjeno je da se radi samo sa bazom
 
-4.)  
+4.)  Izvrsila sam deployment projekta na openshift, ali sam imala problema sa bazom 
+
+5.) Kreirana skripta web_servis.php sa rest metodom
+
+6.) Screenshotovi sa testiranjem preko POSTMAN-a
